@@ -111,8 +111,30 @@ else:
 
     with left:
         st.subheader('월별매출')
-        st.line_chart(monthly_sales,x='month',y='sales')
 
+        st.line_chart(
+            monthly_sales,
+            x='month',
+            y='sales',
+        )
+
+    with right:
+        st.subheader('조회 데이터')
+
+        st.dataframe(
+            filtered,
+            hide_index=True,
+            column_config={
+                'quantity': st.column_config.NumberColumn(
+                    '판매량',
+                    format='%,d개'
+                ),
+                'sales': st.column_config.NumberColumn(
+                    '매출',
+                    format='%,d원'
+                )
+            }
+        )
 
 
 

@@ -1,0 +1,15 @@
+# .streamlit/confiig.toml
+[theme]
+base = "dark"
+
+# Primary accent color.
+primaryColor = "C0C0C0"
+
+# Background color of the app.
+backgroundColor = "C0C0C0"
+
+# Background color used for most interactive widgets.
+secondaryBackgroundColor ="C0C0C0"
+
+# Color used for almost all text.
+textColor ="C0C0C0"
